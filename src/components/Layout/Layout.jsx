@@ -1,12 +1,24 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import Sidebar from '../Sidebar/Sidebar';
+import NavMobile from '../NavMobile/NavMobile';
 import './Layout.scss';
 
 const Layout = () => {
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const screenWidthHandler = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', screenWidthHandler);
+    return () => window.removeEventListener('resize', screenWidthHandler);
+  }, []);
+
   return (
     <div className="layout">
-      <Sidebar />
+      {screenWidth < 992 ? <NavMobile /> : <Sidebar />}
       <div className="page">
         <span className="tags top-tags">&lt;body&gt;</span>
 
