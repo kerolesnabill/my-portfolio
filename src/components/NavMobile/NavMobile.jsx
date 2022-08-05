@@ -36,19 +36,19 @@ const NavMobile = () => {
       {click && (
         <div className="nav-container">
           <nav className="nav-links">
-            <NavLink to="/">
+            <NavLink to="/" onClick={() => setClick(false)}>
               <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
             </NavLink>
-            <NavLink to="/about">
+            <NavLink to="/about" onClick={() => setClick(false)}>
               <FontAwesomeIcon icon={faAddressCard} color="#4d4d4e" />
             </NavLink>
-            <NavLink to="/skills">
+            <NavLink to="/skills" onClick={() => setClick(false)}>
               <FontAwesomeIcon icon={faLightbulb} color="#4d4d4e" />
             </NavLink>
-            <NavLink to="/work">
+            <NavLink to="/work" onClick={() => setClick(false)}>
               <FontAwesomeIcon icon={faBriefcase} color="#4d4d4e" />
             </NavLink>
-            <NavLink to="/contact">
+            <NavLink to="/contact" onClick={() => setClick(false)}>
               <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
             </NavLink>
           </nav>
