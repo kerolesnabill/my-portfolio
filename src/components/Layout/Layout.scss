@@ -92,6 +92,10 @@
       margin-bottom: 40px;
       left: 10px;
 
+      @include breakpoints(xs) {
+        font-size: 38px;
+      }
+
       &:before {
         content: '<h1>';
         font-family: 'La Belle Aurore';

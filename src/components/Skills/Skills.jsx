@@ -4,14 +4,9 @@ import AnimatedLetters from '../AnimatedLetters/AnimatedLetters';
 import { ReactComponent as ReactIcon } from '../../assets/svg/react.svg';
 import { ReactComponent as NextIcon } from '../../assets/svg/next.svg';
 import { ReactComponent as ReduxIcon } from '../../assets/svg/redux.svg';
-import { ReactComponent as JSIcon } from '../../assets/svg/javascript.svg';
 import { ReactComponent as BootstarpIcon } from '../../assets/svg/bootstrap.svg';
 import { ReactComponent as SassIcon } from '../../assets/svg/sass.svg';
 import { ReactComponent as TailwindIcon } from '../../assets/svg/tailwind.svg';
-import { ReactComponent as HtmlIcon } from '../../assets/svg/html.svg';
-import { ReactComponent as CssIcon } from '../../assets/svg/css.svg';
-import { ReactComponent as GitIcon } from '../../assets/svg/git.svg';
-import { ReactComponent as GitHubIcon } from '../../assets/svg/github.svg';
 
 const Skills = () => {
   const [lettersClass, setLettersClass] = useState('text-animate');
@@ -77,20 +72,25 @@ const Skills = () => {
           </p>
         </div>
 
-        <div className="stage-icons-cont">
-          <div className="icons-container">
-            <div>
-              <ReactIcon className="icon i-1" />
-              <ReduxIcon className="icon i-2" />
-              <NextIcon className="icon i-3" />
-              <JSIcon className="icon i-4" />
-              <SassIcon className="icon i-5" />
-              <TailwindIcon className="icon i-6" />
-              <BootstarpIcon className="icon i-7" />
-              <CssIcon className="icon i-8" />
-              <HtmlIcon className="icon i-9" />
-              <GitIcon className="icon i-10" />
-              <GitHubIcon className="icon i-11" />
+        <div className="stage-cube-cont">
+          <div className="cubespinner">
+            <div className="face1">
+              <ReactIcon />
+            </div>
+            <div className="face2">
+              <ReduxIcon />
+            </div>
+            <div className="face3">
+              <NextIcon />
+            </div>
+            <div className="face4">
+              <TailwindIcon />
+            </div>
+            <div className="face5">
+              <BootstarpIcon />
+            </div>
+            <div className="face6">
+              <SassIcon />
             </div>
           </div>
         </div>

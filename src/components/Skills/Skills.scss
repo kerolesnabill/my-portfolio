@@ -1,9 +1,11 @@
+@use '../../helpers/mixins.scss' as *;
+
 .tech-tag {
   color: orange;
   font-weight: bold;
 }
 
-.stage-icons-cont {
+.stage-cube-cont {
   width: 50%;
   height: 100%;
   top: 0;
@@ -12,74 +14,76 @@
   position: absolute;
   right: 0;
   overflow: hidden;
-}
 
-.icons-container {
-  position: absolute;
-  width: 600px;
-  height: 600px;
-  top: 15%;
-  left: 20%;
-  margin: auto;
-}
-
-.icon {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  color: #fff;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  overflow: hidden;
-  margin: auto;
-  -webkit-animation: circle 3s linear infinite;
-  animation: circle 3s linear infinite;
-}
-
-.i-2 {
-  top: 100%;
-}
-.i-3 {
-  bottom: 100%;
-}
-.i-4 {
-  right: 100%;
-}
-.i-5 {
-  left: 100%;
-}
-.i-6 {
-  top: 70%;
-  right: 70%;
-}
-.i-7 {
-  bottom: 70%;
-  left: 70%;
-}
-.i-8 {
-  top: 70%;
-  left: 70%;
-}
-.i-9 {
-  bottom: 70%;
-  right: 70%;
-}
-.i-10 {
-  top: 50%;
-}
-.i-11 {
-  bottom: 50%;
-}
-
-@keyframes circle {
-  0% {
-    transform: rotate(0deg) translate(-15px) rotate(0deg);
+  @include breakpoints(md) {
+    position: relative;
+    display: block;
+    width: auto;
+    margin-top: 20rem;
+    height: 50%;
+  }
+  @include breakpoints(xs) {
+    margin-top: 15rem;
+    padding-top: 23%;
   }
 
-  100% {
-    transform: rotate(360deg) translate(-15px) rotate(-360deg);
+  @include breakpoints(lg-j) {
+    top: 15%;
+  }
+}
+
+.cubespinner {
+  animation-name: spincube;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 12s;
+  transform-style: preserve-3d;
+  transform-origin: 100px 100px 0;
+  margin-left: calc(50% - 100px);
+
+  div {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    background: rgba(255, 255, 255, 0.4);
+    text-align: center;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px 0px lightyellow;
+
+    svg {
+      width: 120px;
+    }
+  }
+
+  .face1 {
+    transform: translateZ(100px);
+  }
+  .face2 {
+    transform: rotateY(90deg) translateZ(100px);
+  }
+  .face3 {
+    transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+  }
+  .face4 {
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+  }
+  .face5 {
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+  }
+  .face6 {
+    transform: rotateX(-90deg) translateZ(100px);
+  }
+}
+
+@keyframes spincube {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  0% {
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
   }
 }
