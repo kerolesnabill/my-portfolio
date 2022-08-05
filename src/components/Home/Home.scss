@@ -1,3 +1,5 @@
+@use '../../helpers/mixins.scss' as *;
+
 .home-page {
   .text-zone {
     position: absolute;
@@ -6,14 +8,34 @@
     transform: translateY(-50%);
     width: 40%;
     max-height: 90%;
+
+    @include breakpoints(md) {
+      display: block;
+      position: relative;
+      width: 85%;
+      top: 35%;
+    }
+    @include breakpoints(xs) {
+      top: 40%;
+    }
   }
 
   h1 {
     color: #fff;
-    font-size: 53px;
+    font-size: 76px;
     margin: 0;
     font-family: 'Coolvetica';
     font-weight: 400;
+
+    @include breakpoints(sm) {
+      font-size: 60px;
+    }
+    @include breakpoints(lg-j) {
+      font-size: 64px;
+    }
+    @include breakpoints(xs) {
+      font-size: 44px;
+    }
 
     &::before {
       content: '<h1>';
@@ -51,9 +73,13 @@
     color: #8d8d8d;
     margin-top: 20px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 18px;
     letter-spacing: 3px;
     animation: fadeIn 1s 1.8s backwards;
+
+    @include breakpoints(xs) {
+      font-size: 16px;
+    }
   }
 
   .flat-button {
@@ -75,5 +101,12 @@
       background: orange;
       color: #333;
     }
+  }
+}
+
+.bottom-tags-home {
+  bottom: 20px;
+  @include breakpoints(md) {
+    bottom: -40%;
   }
 }

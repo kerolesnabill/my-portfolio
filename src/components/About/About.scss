@@ -1,3 +1,5 @@
+@use '../../helpers/mixins.scss' as *;
+
 .stage-cube-cont {
   width: 50%;
   height: 100%;
@@ -7,6 +9,22 @@
   position: absolute;
   right: 0;
   overflow: hidden;
+
+  @include breakpoints(md) {
+    position: relative;
+    display: block;
+    width: auto;
+    margin-top: 20rem;
+    height: 50%;
+  }
+  @include breakpoints(xs) {
+    margin-top: 15rem;
+    padding-top: 23%;
+  }
+
+  @include breakpoints(lg-j) {
+    top: 15%;
+  }
 }
 
 .cubespinner {
