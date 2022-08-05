@@ -5,24 +5,35 @@
   position: relative;
   height: auto;
   min-height: 300px;
+
+  @include breakpoints(md) {
+    top: 20%;
+  }
 }
 
 .work {
-  margin-left: 150px;
+  margin-left: 120px;
+  margin-bottom: 20%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 50px;
   justify-items: center;
   align-items: center;
 
-  @include breakpoints(lg-j) {
-    grid-template-columns: repeat(3, 2fr);
-  }
   @include breakpoints(md) {
     grid-template-columns: repeat(2, 2fr);
     margin-left: 0;
   }
   @include breakpoints(sm) {
     grid-template-columns: 1fr;
+  }
+  @include breakpoints(lg) {
+    grid-template-columns: repeat(2, 2fr);
+  }
+  @include breakpoints(xl) {
+    grid-template-columns: repeat(3, 2fr);
+  }
+  @include breakpoints(xxl) {
+    grid-template-columns: repeat(4, 2fr);
   }
 }

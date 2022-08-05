@@ -19,6 +19,10 @@
     @media (min-width: 1200px) {
       @content;
     }
+  } @else if $point == xxl {
+    @media (min-width: 1700px) {
+      @content;
+    }
   }
   // Just this size
   @else if $point == md-j {
@@ -27,6 +31,10 @@
     }
   } @else if $point == lg-j {
     @media (min-width: 992px) and (max-width: 1199px) {
+      @content;
+    }
+  } @else if $point == xl-j {
+    @media (min-width: 993px) and (max-width: 1200px) {
       @content;
     }
   }
