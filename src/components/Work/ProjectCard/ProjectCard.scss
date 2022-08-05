@@ -1,0 +1,89 @@
+@use '../../../helpers/mixins.scss' as *;
+
+.card {
+  width: 90%;
+  height: 400px;
+  min-width: 360px;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px #046294;
+
+  @include breakpoints(sm) {
+    width: 65%;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: auto;
+    bottom: 0;
+    color: #fff;
+    font-size: 16px;
+    background: #000000cd;
+    text-align: center;
+    border-radius: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+    transition: all 0.3s;
+
+    .text-container {
+      margin-top: 50px;
+      h1 {
+        font-size: 34px;
+        color: orange;
+        padding: 5px;
+      }
+      h3 {
+        margin-top: 40px;
+        font-size: 18px;
+        color: #ffa600da;
+      }
+      p {
+        padding: {
+          left: 10px;
+          right: 10px;
+        }
+      }
+    }
+  }
+  .btns-container {
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+    .btn {
+      margin-top: 20px;
+      border-radius: 16px;
+      border: 0;
+      padding: 14px;
+      font-size: 18px;
+      cursor: pointer;
+      background: none;
+      color: #022c43;
+      background: #979696;
+      text-decoration: none;
+      svg {
+        padding-right: 5px;
+      }
+
+      &:hover {
+        background: #cec9c9;
+      }
+    }
+  }
+
+  &:hover {
+    box-shadow: 5px 5px 10px #067ebe;
+
+    .content {
+      display: inherit;
+    }
+  }
+}
