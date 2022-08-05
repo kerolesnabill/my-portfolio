@@ -20,6 +20,13 @@
     }
   }
 
+  .letter-k {
+    width: 50px;
+    @include breakpoints(xs) {
+      width: 40px;
+    }
+  }
+
   h1 {
     color: #fff;
     font-size: 76px;
