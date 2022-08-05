@@ -1,0 +1,28 @@
+@use '../../helpers/mixins.scss' as *;
+
+.work-page {
+  display: block;
+  position: relative;
+  height: auto;
+  min-height: 300px;
+}
+
+.work {
+  margin-left: 150px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  justify-items: center;
+  align-items: center;
+
+  @include breakpoints(lg-j) {
+    grid-template-columns: repeat(3, 2fr);
+  }
+  @include breakpoints(md) {
+    grid-template-columns: repeat(2, 2fr);
+    margin-left: 0;
+  }
+  @include breakpoints(sm) {
+    grid-template-columns: 1fr;
+  }
+}
