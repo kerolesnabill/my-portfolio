@@ -119,6 +119,7 @@ const Contact = () => {
           </MapContainer>
         </div>
       </div>
+      <div className="space"></div>
     </>
   );
 };
