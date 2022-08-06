@@ -6,6 +6,7 @@ import About from './components/About/About';
 import Skills from './components/Skills/Skills';
 import Work from './components/Work/Work';
 import Contact from './components/Contact/Contact';
+import NotFound from './components/NotFound/NotFound';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/work" element={<Work />} />
           <Route path="/contact" element={<Contact />} />
         </Route>
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );

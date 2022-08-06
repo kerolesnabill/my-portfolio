@@ -1,0 +1,27 @@
+.not-found-page {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  transform: translateY(60%);
+
+  h1 {
+    font-size: 48px;
+    color: orange;
+    animation: zoomIn 0.6s;
+  }
+
+  .btn {
+    font-size: 24px;
+    padding: 10px;
+    color: orange;
+    border: 1px solid orange;
+    border-radius: 10px;
+    text-decoration: none;
+    animation: fadeIn 3s;
+
+    &:hover {
+      background: orange;
+      color: #022c43;
+    }
+  }
+}
