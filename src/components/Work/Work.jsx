@@ -6,6 +6,7 @@ import vrImg from '../../assets/images/vr.png';
 import travelImg from '../../assets/images/travel.png';
 import notesImg from '../../assets/images/notes.png';
 import foodImg from '../../assets/images/food.png';
+import { FallingLines } from 'react-loader-spinner';
 
 const Work = () => {
   const [lettersClass, setLettersClass] = useState('text-animate');
@@ -56,6 +57,14 @@ const Work = () => {
           description="Landing page - VR website"
           technologies="React, Tailwind css"
           img={vrImg}
+        />
+      </div>
+      <div class="loader-active">
+        <FallingLines
+          color="#ffa500"
+          width="100"
+          visible={true}
+          ariaLabel="falling-lines-loading"
         />
       </div>
     </>

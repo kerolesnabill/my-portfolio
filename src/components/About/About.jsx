@@ -10,6 +10,7 @@ import {
   faGitAlt,
   faSass,
 } from '@fortawesome/free-brands-svg-icons';
+import { FallingLines } from 'react-loader-spinner';
 
 const About = () => {
   const [lettersClass, setLettersClass] = useState('text-animate');
@@ -69,6 +70,14 @@ const About = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div class="loader-active">
+        <FallingLines
+          color="#ffa500"
+          width="100"
+          visible={true}
+          ariaLabel="falling-lines-loading"
+        />
       </div>
     </>
   );

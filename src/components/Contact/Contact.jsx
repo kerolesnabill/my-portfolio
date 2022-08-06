@@ -3,6 +3,7 @@ import './Contact.scss';
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters';
 import emailjs from '@emailjs/browser';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { FallingLines } from 'react-loader-spinner';
 
 const Contact = () => {
   const [lettersClass, setLettersClass] = useState('text-animate');
@@ -120,6 +121,14 @@ const Contact = () => {
         </div>
       </div>
       <div className="space"></div>
+      <div class="loader-active">
+        <FallingLines
+          color="#ffa500"
+          width="100"
+          visible={true}
+          ariaLabel="falling-lines-loading"
+        />
+      </div>
     </>
   );
 };

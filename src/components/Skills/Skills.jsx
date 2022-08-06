@@ -7,6 +7,7 @@ import { ReactComponent as ReduxIcon } from '../../assets/svg/redux.svg';
 import { ReactComponent as BootstarpIcon } from '../../assets/svg/bootstrap.svg';
 import { ReactComponent as SassIcon } from '../../assets/svg/sass.svg';
 import { ReactComponent as TailwindIcon } from '../../assets/svg/tailwind.svg';
+import { FallingLines } from 'react-loader-spinner';
 
 const Skills = () => {
   const [lettersClass, setLettersClass] = useState('text-animate');
@@ -94,6 +95,14 @@ const Skills = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div class="loader-active">
+        <FallingLines
+          color="#ffa500"
+          width="100"
+          visible={true}
+          ariaLabel="falling-lines-loading"
+        />
       </div>
     </>
   );
