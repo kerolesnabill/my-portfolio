@@ -71,6 +71,25 @@ const Skills = () => {
             the project's completion. I guarantee a commitment during work on
             your project.
           </p>
+          <p>
+            <span>Visit my </span>
+            <a
+              className="tech-tag"
+              target="_blanck"
+              href="https://www.linkedin.com/in/kerolesnabil/"
+            >
+              LinkedIn
+            </a>
+            <span> profile and my </span>
+            <a
+              className="tech-tag"
+              target="_blanck"
+              href="https://github.com/kerolesnabill"
+            >
+              GitHub
+            </a>
+            <span> profile for more details. </span>
+          </p>
         </div>
 
         <div className="stage-cube-cont">
