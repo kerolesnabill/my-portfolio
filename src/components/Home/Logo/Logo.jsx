@@ -8,7 +8,7 @@ const Logo = () => {
       <div className="logo-container">
         <img className="solid-logo" src={LogoK} alt="" />
       </div>
-      <div style={{ height: '70rem' }}></div>
+      <div className="space"></div>
     </>
   );
 };

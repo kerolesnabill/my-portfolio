@@ -54,3 +54,11 @@
     animation: fadeIn 3s;
   }
 }
+
+.space {
+  height: 30rem;
+
+  @include breakpoints(sm) {
+    height: 70rem;
+  }
+}

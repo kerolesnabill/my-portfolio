@@ -176,9 +176,12 @@
 
 .space {
   @include breakpoints(md) {
-    margin-bottom: 135rem;
+    margin-bottom: 110rem;
+  }
+  @include breakpoints(sm) {
+    margin-bottom: 70rem;
   }
   @include breakpoints(xs) {
-    margin-bottom: 120rem;
+    margin-bottom: 50rem;
   }
 }
