@@ -39,12 +39,16 @@ const Work = () => {
             description="Website to order food"
             technologies="React, Redux, Tailwind css, Firebase"
             img={foodImg}
+            liveURL="https://kerolesnabill.github.io/food-order"
+            codeURL="https://github.com/kerolesnabill/food-order"
           />
           <ProjectCard
             title="Travel Website"
             description="Website for traveling"
             technologies="React, Bootstrap"
             img={travelImg}
+            liveURL="https://kerolesnabill.github.io/travel-website"
+            codeURL="https://github.com/kerolesnabill/travel-website"
           />
 
           <ProjectCard
@@ -52,12 +56,16 @@ const Work = () => {
             description="Website like google keep"
             technologies="React, Sass, Firebase"
             img={notesImg}
+            liveURL="https://kerolesnabill.github.io/notes-app"
+            codeURL="https://github.com/kerolesnabill/notes-app"
           />
           <ProjectCard
             title="VR Website"
             description="Landing page - VR website"
             technologies="React, Tailwind css"
             img={vrImg}
+            liveURL="https://kerolesnabill.github.io/vr-website"
+            codeURL="https://github.com/kerolesnabill/vr-website"
           />
         </div>
       </div>
