@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.6647b4cf.css",
+    "main.js": "/my-portfolio/static/js/main.1bab0312.js",
+    "static/media/food.png": "/my-portfolio/static/media/food.3d5bae221aacd82f1dc7.png",
+    "static/media/travel.png": "/my-portfolio/static/media/travel.d04b88961b747ba6e776.png",
+    "static/media/vr.png": "/my-portfolio/static/media/vr.7705a7e05915871dcaa9.png",
+    "static/media/helvetica-neu.ttf": "/my-portfolio/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
+    "static/media/notes.png": "/my-portfolio/static/media/notes.fb8d43b2d4a9103ffb22.png",
+    "static/media/LaBelleAurore.woff2": "/my-portfolio/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
+    "static/media/logo.png": "/my-portfolio/static/media/logo.dba3541d718db141291d.png",
+    "static/media/logo_sub.png": "/my-portfolio/static/media/logo_sub.6a73d18423f96f4a7672.png",
+    "static/media/CoolveticaRg-Regular.woff2": "/my-portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
+    "static/media/sass.svg": "/my-portfolio/static/media/sass.8aa78a8393470431c8036541f0708bd7.svg",
+    "static/media/react.svg": "/my-portfolio/static/media/react.e68b35f4774979ae220b1d5d7b345b00.svg",
+    "static/media/redux.svg": "/my-portfolio/static/media/redux.0e4fb1c819ac4c060c92343147d4ccf7.svg",
+    "static/media/next.svg": "/my-portfolio/static/media/next.1b2b52c044b9dcea988e68b966864c5a.svg",
+    "static/media/bootstrap.svg": "/my-portfolio/static/media/bootstrap.98585727bcfe0b1555649ec9bbab236c.svg",
+    "static/media/tailwind.svg": "/my-portfolio/static/media/tailwind.315d0ac2a2708d5f06972906113dfbf1.svg",
+    "index.html": "/my-portfolio/index.html",
+    "main.6647b4cf.css.map": "/my-portfolio/static/css/main.6647b4cf.css.map",
+    "main.1bab0312.js.map": "/my-portfolio/static/js/main.1bab0312.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6647b4cf.css",
+    "static/js/main.1bab0312.js"
+  ]
+}
